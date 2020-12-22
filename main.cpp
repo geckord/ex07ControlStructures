@@ -19,8 +19,7 @@ int main()
 
         int numberOfWeeks = numberOfDays / 7;
         int targetDay = numberOfDays % 7;
-        int dayResult = day + targetDay;
-        dayResult %= 7;
+        int dayResult = (day + targetDay) % 7;
         
         string dayOutput;
         if (dayResult == 0) dayOutput = "Friday";
