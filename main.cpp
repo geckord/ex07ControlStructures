@@ -11,7 +11,7 @@ int main()
     {
         int day;
         int numberOfDays;
-
+        
         cout << "Enter today as follows: 0 for Friday, 1 for Saturday, 2 for Sunday, 3 for Monday, 4 for Tuesday, 5 for Wednesday, and 6 for Thursday:" << endl;
         cin >> day;
         cout << "Enter the number of days:" << endl;
@@ -21,6 +21,7 @@ int main()
         int targetDay = numberOfDays % 7;
         int dayResult = day + targetDay;
         dayResult %= 7;
+        
         string dayOutput;
         if (dayResult == 0) dayOutput = "Friday";
         else if (dayResult == 1) dayOutput = "Saturday";
